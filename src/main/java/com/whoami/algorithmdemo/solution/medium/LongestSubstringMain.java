@@ -21,9 +21,9 @@ package com.whoami.algorithmdemo.solution.medium;
  * ------ s 仅由小写英文字母组成
  * ------ 1 <= k <= 105
  *
- * @Copyright 2021 - Powered By whoami
- * @author: whoamizq
- * @date:  2021-02-27 15:00
+ * @copyright 2021 - Powered By whoami
+ * @author whoamizq
+ * @date  2021-02-27 15:00
  * @version V1.0
  */
 public class LongestSubstringMain {

@@ -30,6 +30,31 @@ public class DetectCapitalUse520 {
         System.out.println(detectCapitalUse2(word1));
         System.out.println(detectCapitalUse2(word2));
         System.out.println(detectCapitalUse2(word3));
+
+        System.out.println(detectCapitalUse1(word3));
+    }
+
+    /**
+     * 方法一：复杂度为 O(n),常数为5
+     * 算法执行过程中会产生新的字符串，复杂度为O(n)
+     *
+     * @param word 字符串
+     * @return boolean
+     */
+    public static boolean detectCapitalUse1(String word){
+        if (word.toUpperCase().equals(word)) {
+            return true;
+        }
+        if (word.toLowerCase().equals(word)) {
+            return true;
+        }
+        int n = word.length(),idx = 1;
+        if (Character.isUpperCase(word.charAt(0))) {
+            while (idx < n && Character.isLowerCase(word.charAt(idx))){
+                idx++;
+            }
+        }
+        return idx == n;
     }
 
     /**
